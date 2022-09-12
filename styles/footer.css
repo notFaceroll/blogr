@@ -1,0 +1,43 @@
+.footer {
+  background-color: var(--color-grad-body-500);
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+}
+
+.footer__brand {
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  padding-block: 1em;
+}
+
+.block {
+  margin-bottom: 1em;
+}
+
+.block__title {
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+.block__link:is(:visited, :link, :active, :focus) {
+  color: var(--color-neutral-100);
+  font-weight: 300;
+}
+
+@media screen and (min-width: 764px) {
+  .footer {
+    flex-direction: row;
+    /* justify-content: center; */
+    text-align: start;
+    padding-inline: 5em;
+    gap: clamp(100px, 100%, 12vw);
+    padding-block: 2em;
+  }
+
+  .footer__brand {
+    padding: 0;
+  }
+}

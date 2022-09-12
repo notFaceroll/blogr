@@ -1,0 +1,45 @@
+.art {
+  background: url('./images/bg-pattern-circles.svg') no-repeat 0% -10%;
+  background-size: contain;
+  background-color: var(--color-grad-body-500);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding-bottom: 3em;
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-top: 15em; */
+}
+
+.art__image {
+  position: absolute;
+  top: 0;
+  translate: 0 -50%;
+}
+
+.art__text {
+  padding: 2em;
+}
+
+.art__title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-block: 0.5rem;
+}
+
+@media screen and (min-width: 764px) {
+  .art {
+    flex-direction: row;
+  }
+  .art__image {
+    position: relative;
+    translate: 0;
+  }
+
+  .art__text {
+    width: 50%;
+  }
+}
