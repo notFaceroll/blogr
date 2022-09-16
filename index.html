@@ -17,8 +17,104 @@
   <body>
     <div class="app" id="app">
       <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="primary">
           <p class="navbar__brand">Blogr</p>
+          <ul class="navbar__list">
+            <li class="navbar__item" data-dropdown>
+              <a class="btn-drop" data-dropdown-btn>Product</a>
+              <span
+                ><i
+                  data-dropdown-btn
+                  class="fa-solid fa-chevron-down nav-icon"
+                ></i
+              ></span>
+              <div class="drop-content hidden">
+                <a class="drop-link" href="#">Overview</a>
+                <a class="drop-link" href="#">Pricing</a>
+                <a class="drop-link" href="#">Marketplace</a>
+                <a class="drop-link" href="#">Features</a>
+                <a class="drop-link" href="#">Integrations</a>
+              </div>
+            </li>
+            <li class="navbar__item" data-dropdown>
+              <a class="btn-drop" data-dropdown-btn>Company</a>
+              <span
+                ><i
+                  data-dropdown-btn
+                  class="fa-solid fa-chevron-down nav-icon"
+                ></i
+              ></span>
+              <div class="drop-content hidden">
+                <a class="drop-link" href="#">About</a>
+                <a class="drop-link" href="#">Team</a>
+                <a class="drop-link" href="#">Blog</a>
+                <a class="drop-link" href="#">Careers</a>
+              </div>
+            </li>
+            <li class="navbar__item" data-dropdown>
+              <a class="btn-drop" data-dropdown-btn>Connect</a>
+              <span
+                ><i
+                  data-dropdown-btn
+                  class="fa-solid fa-chevron-down nav-icon"
+                ></i
+              ></span>
+              <div class="drop-content hidden">
+                <a class="drop-link" href="#">Contact</a>
+                <a class="drop-link" href="#">Newsletter</a>
+                <a class="drop-link" href="#">Linkedin</a>
+              </div>
+            </li>
+          </ul>
+          <nav class="navbar--mobile">
+            <ul class="navbar__list--mobile">
+              <li class="navbar__item" data-dropdown>
+                <a class="btn-drop" data-dropdown-btn>Product</a>
+                <span
+                  ><i
+                    data-dropdown-btn
+                    class="fa-solid fa-chevron-down nav-icon"
+                  ></i
+                ></span>
+                <div class="drop-content hidden">
+                  <a class="drop-link" href="#">Overview</a>
+                  <a class="drop-link" href="#">Pricing</a>
+                  <a class="drop-link" href="#">Marketplace</a>
+                  <a class="drop-link" href="#">Features</a>
+                  <a class="drop-link" href="#">Integrations</a>
+                </div>
+              </li>
+              <li class="navbar__item" data-dropdown>
+                <a class="btn-drop" data-dropdown-btn>Company</a>
+                <span
+                  ><i
+                    data-dropdown-btn
+                    class="fa-solid fa-chevron-down nav-icon"
+                  ></i
+                ></span>
+                <div class="drop-content hidden">
+                  <a class="drop-link" href="#">About</a>
+                  <a class="drop-link" href="#">Team</a>
+                  <a class="drop-link" href="#">Blog</a>
+                  <a class="drop-link" href="#">Careers</a>
+                </div>
+              </li>
+              <li class="navbar__item" data-dropdown>
+                <a class="btn-drop" data-dropdown-btn>Connect</a>
+                <span
+                  ><i
+                    data-dropdown-btn
+                    class="fa-solid fa-chevron-down nav-icon"
+                  ></i
+                ></span>
+                <div class="drop-content hidden">
+                  <a class="drop-link" href="#">Contact</a>
+                  <a class="drop-link" href="#">Newsletter</a>
+                  <a class="drop-link" href="#">Linkedin</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
           <span class="navbar__icon"><i class="fa-solid fa-bars"></i></span>
         </nav>
         <div class="header__content">
@@ -144,6 +240,7 @@
         </div>
       </footer>
     </div>
+    <script type="module" src="/menu.js" defer></script>
     <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>
