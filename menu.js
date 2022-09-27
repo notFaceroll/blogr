@@ -16,3 +16,11 @@ document.addEventListener('click', function (event) {
     dropdown.classList.remove('active');
   });
 });
+
+const btn = document.querySelector('#icon');
+const nav = document.querySelector('.nav');
+document.querySelector('#menu').addEventListener('click', function (event) {
+  nav.classList.toggle('show');
+  btn.classList.toggle('fa-xmark');
+  btn.classList.toggle('fa-bars');
+});
