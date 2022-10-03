@@ -82,6 +82,7 @@
 .drop-link:hover {
   text-decoration: none;
   text-shadow: #000 0px 0px 1px;
+  /* text-decoration: underline 2px; */
 }
 
 .nav-icon {

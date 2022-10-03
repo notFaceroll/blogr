@@ -6,6 +6,7 @@
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   padding-bottom: 6em;
+  padding-inline: 2em;
   position: relative;
   min-height: 70vh;
   display: flex;
@@ -13,16 +14,13 @@
   justify-content: flex-end;
   align-items: center;
   margin-top: 10em;
+  gap: 2em;
 }
 
 .art__image {
   position: absolute;
   top: 0;
   translate: 0 -50%;
-}
-
-.art__text {
-  padding: 2em;
 }
 
 .art__title {
@@ -35,13 +33,22 @@
   .art {
     flex-direction: row;
     margin-top: 0;
+    padding-bottom: 0;
+    height: 40vh;
+    min-height: 0;
+    justify-content: center;
+    background-size: 60%;
+    background-position: -100px -400px;
+    padding-inline: 0;
   }
   .art__image {
     position: relative;
     translate: 0;
+    scale: 1.1;
   }
 
   .art__text {
-    width: 50%;
+    width: 40%;
+    text-align: start;
   }
 }

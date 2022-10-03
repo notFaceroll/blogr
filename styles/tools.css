@@ -33,9 +33,14 @@
 @media screen and (min-width: 764px) {
   .tools {
     flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    padding-inline: 0;
   }
   .tools__content {
+    width: 40%;
     text-align: start;
+    flex-shrink: 0;
   }
 
   .tools__img {

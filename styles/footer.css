@@ -1,8 +1,13 @@
 .footer {
   background-color: var(--color-grad-body-500);
   border-top-right-radius: 100px;
+}
+
+.footer__wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin-inline: auto;
   padding: 1em;
   gap: 1em;
 }
@@ -28,9 +33,8 @@
 }
 
 @media screen and (min-width: 764px) {
-  .footer {
+  .footer__wrapper {
     flex-direction: row;
-    /* justify-content: center; */
     text-align: start;
     padding-inline: 5em;
     gap: clamp(100px, 100%, 12vw);
