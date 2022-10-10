@@ -4,7 +4,7 @@
   margin-inline: auto;
   flex-direction: column;
   padding-inline: 2em;
-  padding-block: 4em;
+  padding-block-end: 4em;
   margin-bottom: 2em;
 }
 
@@ -36,6 +36,7 @@
     justify-content: center;
     gap: 2em;
     padding-inline: 0;
+    padding-block: 4em;
   }
   .tools__content {
     width: 40%;

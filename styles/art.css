@@ -8,7 +8,7 @@
   padding-bottom: 6em;
   padding-inline: 2em;
   position: relative;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -40,6 +40,7 @@
     background-size: 60%;
     background-position: -100px -400px;
     padding-inline: 0;
+    /* gap: 8rem; */
   }
   .art__image {
     position: relative;
